@@ -1,0 +1,259 @@
+:focus {
+  outline: none;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+img {
+  width: 100%;
+}
+header {
+  transition: background-color .5s linear;
+}
+header .thi {
+  transition: padding .5s linear;
+}
+header .thu {
+  transition: margin .5s linear;
+}
+header.active {
+  background-color: #111827;
+}
+header.active .thi{
+  padding: 1rem 0
+}
+header.active .thu{
+  margin-top: 1rem;
+}
+.z-2 {
+  z-index: 2;
+}
+.z-5 {
+  z-index: 5;
+}
+.border-yellow-gold {
+  border-color: #DBBF80;
+}
+.font-lora {
+  font-family: 'Lora', serif; 
+}
+.jumbotron::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 3;
+}
+.bg-side {
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+}
+.title-wrapper {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.txt-grey {
+  color: #333333;
+}
+.txt-white-grey {
+  color: #999999;
+}
+.txt-yellow-gold {
+  color: #DBBF80;
+}
+.txt-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bg-yellow-gold {
+  background-color: #DBBF80;
+}
+.title-wrapper h1 {
+  font-weight: bold;
+}
+.title-wrapper p {
+  line-height: 26px;
+}
+.button-wrapper {
+  bottom: 90px;
+}
+.jumbotron--next, .jumbotron--prev {
+  width: 36px;
+  height: 36px;
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron--next {
+  background-image: url('../icon/arr-right.png');
+}
+.jumbotron--prev {
+  background-image: url('../icon/arr-left.png');
+}
+.pagination-wrapper {
+  bottom: 32px;
+}
+.swiper-pagination-bullet {
+  margin: 0 4px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+.product--pagination .swiper-pagination-bullet {
+  margin: 0 4px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #DBBF80;
+  background: transparent;
+  opacity: 1;
+}
+.product--pagination .swiper-pagination-bullet-active {
+  background: #DBBF80;
+}
+.burger-menu {
+  width: 28px;
+}
+.close-menu {
+  top: 42px;
+}
+.side-menu {
+  transform: translateX(100%);
+  transition: transform .4s cubic-bezier(.46,.54,.17,1),-webkit-transform .4s cubic-bezier(.46,.54,.17,1);
+}
+.side-menu.show {
+  transform: translateX(0%);
+}
+.sub-title {
+  position: relative;
+}
+.sub-title::before, .sub-title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 60px;
+  background-color: #CCCCCC;
+}
+.sub-title::before {
+  transform: translate(-50%, -50%);
+  left: -50%;
+}
+.sub-title::after {
+  right: -50%;
+  transform: translate(50%, -50%);
+}
+.overlay-side::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+.overlay-yellow::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(179 154 98 / 75%);
+  z-index: 1;
+}
+.rating {
+  width: 20px;
+}
+.btnhov {
+  transition: all .3s linear;
+}
+.btnhov:hover {
+  background-color: rgb(255 255 255 / 25%);
+}
+.chatus {
+  bottom: 0;
+  right: 8px;
+  background-color: #33BB47;
+  border-radius: 1em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 8px 20px 8px;
+}
+.chatus img {
+  width: 28px;
+}
+.product-layout {
+  padding-top: 25vh;
+}
+.product-layout::before {
+  content: '';
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../img/03.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.with-border::before {
+  content: '';
+  height: 4px;
+  width: 115px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #DBBF80;
+}
+.gallery-layout {
+  position: relative;
+  margin-top: -150px;
+  padding-top: calc(25vh + 150px);
+}
+.gallery-layout::before {
+  content: '';
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../img/08.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.pb-100-p {
+  padding-bottom: 100%;
+}
+@media screen and (min-width: 1025px) {
+  .jumbotron::before{
+    width: 50%;
+  }
+  .sub-title::before, .sub-title::after {
+    width: 200px;
+  }
+  .sub-title::before {
+    left: -150%;
+  }
+  .sub-title::after {
+    right: -150%;
+  }
+  .chatus {
+    right: 16px;
+    padding: 8px 32px 8px;
+  }
+  .chatus img {
+    width: 32px;
+  }
+  .pb-100-p {
+    padding-bottom: 0;
+  }
+}
